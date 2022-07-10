@@ -1,6 +1,7 @@
 lenguage: node_js
 node_js:
   - 13
+
 before_deploy:
   - rvm $(travis_internal_ruby) --fuzzy do ruby -S gem install faraday -v 1.8.0
 
@@ -8,6 +9,7 @@ cache:
   directories:
     - node_modules
 
+#travis setup heroku --force
 deploy:
   provider: heroku
   app: nodejs-travis-cicd
