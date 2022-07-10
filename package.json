@@ -17,5 +17,11 @@
   "bugs": {
     "url": "https://github.com/daniloabella18/node-travis-cicd/issues"
   },
-  "homepage": "https://github.com/daniloabella18/node-travis-cicd#readme"
+  "homepage": "https://github.com/daniloabella18/node-travis-cicd#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "jest": "^28.1.2"
+  }
 }
