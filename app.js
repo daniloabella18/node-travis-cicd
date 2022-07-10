@@ -1,4 +1,3 @@
-require('dotenv').config(); // Permite usar variables .env
 
 const express = require('express')
 const cors = require('cors')
