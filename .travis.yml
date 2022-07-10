@@ -1,13 +1,10 @@
 lenguage: node_js
 node_js:
-  - 13
+- 13
 before_deploy:
-  - rvm $(travis_internal_ruby) --fuzzy do ruby -S gem install faraday -v 1.8.0
+- rvm $(travis_internal_ruby) --fuzzy do ruby -S gem install faraday -v 1.8.0
 deploy:
   provider: heroku
-  api_key:
-    secure: iId1CPGrOqrDG479nzXmvSz2PVEf2BrlmRFSlzgVzXaC9qycqSwI2iEy8uyddqKWRsWqP8nXtxCQ+MtPmW1sMNUSAvYaS1ETz/xnnfZCiTNSsY77X2O+Q8HeZj7m0IkrDUfEJkcl/r0flqsSED9W6M1WkPxHms9l8XxMdK9ignsnSsnSRypIL9v+rqEtVzLobu7C5Pp+dO6JIok61rOjwH9Vzp4T9Y3k+B8/nJ1UIXj9xK8lURkJJ1+iXss69xdRwVi/UMDQrJ6Fdj5LzIhPhG45C2rBhahFQ8TyOphDfMy0Zpz1z/3w1s/kl57Hgmb41PWRv9xFAdwbRwhyOfAZDRQ03fS6U0Cgs34kx7wCaUHszo4MbbT4Vep9Gxwfmgk9r+V5+8dubzMIbqXmWYLttR5d15nkXmtL2PJBoFkG1WuIioblgA12D0olySXHqILvE8FX3Wk5TbJtT4H8+LvEDQjfAexehvrkyMoD8rQd4OZUd7vDu/ZttMvvvJ/blVecYM4JmPdgDtvcj4Ggy1BuCGALxl5W4exOQp3kVGTlx2/CzMncNcexdLkiuta/nx0lkHKSsKPUJ3CL8XsP3kebplxLcGovwDcBOp00euOm0flSvMal0XWHyuSlh4ogTr63dZFyfLyFzYk4Fq8H/Pqd6AoWjSNeuObgb/u/bqJi8xE=
   app: nodejs-travis-cicd
-  on:
-    repo: daniloabella18/node-travis-cicd
-  skip_cleanup: true
+  api_key:
+    secure: xgSBVBN8vwwJsgDwayRf3MJ4hsqBLeaH4TeT2nsEJKwXSPfPvo1nfk+05PwbPa26ZQb6m7vH25E0Wo81lxV8Jj0bAsH3nPU+IMGfjKKTvcrYywkheG9ABcHwsc9g5pvNOV8QVAg6aTsx4yixEgchrOFopLWhB+BD29h4poxjTLs1fpk2OTV70al6Oefj5ETlnXLVLbL85lBUhjP/zkoKAilg0IIyQA4NpyXRFusUtOjRJ7SmS/szqMLIMcuGogzvP87slyUBwH3dUsKa/rjUgY0ROOokjFY7QmVEGVc7VeECtxTleEKN6UEhpL2hqWeBGMFUgT4J3Dgw1SKdpEYkSwNKVCRuANpaB8qInMUx18zKuRvlsBolhZ/JuWo/bDZ4BnQS5VUIHv/i0rLn4VI4osB7zVuRze1Wgx1d70nY8XfLudim1TPjR9nZPVoYXQjCB18ugpMorwQpAplRKp4P9zUsm6EzcqslO8D9wOlTuuRHMvd+fMc/qofbUVCpt5EvDS4MufCCBWt8fcxRBi3sSsBmVwGlGeZE3BU68yIL04QzOGTlOsTiHD/GeD3CUBeE0spAWTvfff1PvGRxLN4brBVpelzEfnskkRHfjZeqdtyypQdA5hcD1PIRqSpVhyNaTjVZNmV4ThWm5VYJVKEprLJ79n1yQi4TuNbxbn8oJIg=
